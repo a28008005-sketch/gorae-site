@@ -54,7 +54,7 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-          BLOG_REQUIRE_NOTION: '1'
+          BLOG_REQUIRE_NOTION: '0'
         run: node tools/blog/build.mjs
 
       - uses: actions/configure-pages@v5
