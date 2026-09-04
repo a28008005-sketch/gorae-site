@@ -75,7 +75,7 @@ const fmtDate = (d) => {
 function listPage(theme, posts) {
   const cards = posts.length
     ? posts.map((p) => `
-      <a class="post-card" href="posts/${encodeURIComponent(p.slug)}.html">
+      <a class="post-card" href="/blog/posts/${encodeURIComponent(p.slug)}.html">
         <span class="post-date">${esc(fmtDate(p.date))}</span>
         <h2>${esc(p.title)}</h2>
         <p class="summary">${esc(p.summary)}</p>
@@ -109,8 +109,8 @@ ${cards}
 
 function postPage(theme, post, prev, next) {
   const nav = [
-    prev ? `<a class="btn btn-outline" href="${encodeURIComponent(prev.slug)}.html">← ${esc(prev.title)}</a>` : '<span></span>',
-    next ? `<a class="btn btn-outline" href="${encodeURIComponent(next.slug)}.html">${esc(next.title)} →</a>` : '<span></span>',
+    prev ? `<a class="btn btn-outline" href="/blog/posts/${encodeURIComponent(prev.slug)}.html">← ${esc(prev.title)}</a>` : '<span></span>',
+    next ? `<a class="btn btn-outline" href="/blog/posts/${encodeURIComponent(next.slug)}.html">${esc(next.title)} →</a>` : '<span></span>',
   ].join('\n        ');
 
   return page({
@@ -121,7 +121,7 @@ function postPage(theme, post, prev, next) {
     body: `
   <article class="wrap post-wrap">
     <header class="post-header">
-      <a class="ext-link" href="../index.html">← ${esc(BLOG_TITLE)}</a>
+      <a class="ext-link" href="/blog">← ${esc(BLOG_TITLE)}</a>
       <h1>${esc(post.title)}</h1>
       <div class="post-meta">
         <span class="post-date">${esc(fmtDate(post.date))}</span>
