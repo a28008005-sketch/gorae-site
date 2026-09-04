@@ -6,7 +6,7 @@
   "framework": null,
   "build": {
     "env": {
-      "BLOG_REQUIRE_NOTION": "1"
+      "BLOG_REQUIRE_NOTION": "0"
     }
   },
   "cleanUrls": true,
