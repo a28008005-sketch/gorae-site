@@ -150,7 +150,11 @@ async function main() {
   let warnings = [];
   let mode;
 
-  if (token && databaseId) {
+  if (process.env.BLOG_REQUIRE_NOTION === '0') {
+    mode = 'sample';
+    posts = JSON.parse(await readFile(join(HERE, 'sample.json'), 'utf8'));
+    console.log('노션 연결을 비활성화했으므로 홈페이지 내 블로그로 표시합니다.');
+  } else if (token && databaseId) {
     mode = 'notion';
     console.log('노션에서 글을 읽어오는 중…');
     const result = await fetchPosts({
