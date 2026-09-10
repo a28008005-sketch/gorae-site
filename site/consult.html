@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="고래영어학원 진주 초전동 1:1 심층 입학·레벨 상담 신청. 사전 진단지를 작성하시면 상담 당일 더 정밀한 레벨 진단과 맞춤 학습 로드맵을 안내해 드립니다.">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://whalejinju.kr/consult">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="고래영어 초전캠퍼스">
+<meta property="og:title" content="고래영어학원 | 1:1 심층 입학·레벨 상담 신청">
+<meta property="og:description" content="사전 진단지 약 2분. 상담 전에 우리 아이에게 꼭 맞는 학습 로드맵을 미리 찾아드립니다.">
+<meta property="og:url" content="https://whalejinju.kr/consult">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐋</text></svg>">
+<title>고래영어학원 | 1:1 심층 입학·레벨 상담 신청</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+  :root{
+    --navy:#003C70;
+    --navy-dark:#00284d;
+    --yellow:#FFC845;
+    --yellow-soft:#FFF4DA;
+    --ink:#1c2b3a;
+    --sub:#5b6b7c;
+    --line:#e7ecf1;
+    --bg:#f6f8fb;
+    --white:#ffffff;
+    --danger:#e04848;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    word-break:keep-all;
+  }
+  img{max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- Header ---------- */
+  .top{
+    background:var(--navy);
+    color:#fff;
+    padding:14px 0;
+  }
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;}
+  .brand{
+    display:flex;align-items:center;gap:8px;
+    font-weight:800;font-size:16px;letter-spacing:-0.2px;
+    text-decoration:none;
+  }
+  .brand .dot{
+    width:8px;height:8px;border-radius:50%;background:var(--yellow);
+    display:inline-block;
+  }
+  .top .loc{font-size:12.5px;color:#cfe0f2;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color:#fff;
+    padding:52px 0 64px;
+    text-align:center;
+  }
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,200,69,0.55);
+    color:var(--yellow);
+    font-size:13px;font-weight:700;
+    padding:7px 14px;border-radius:999px;
+    margin-bottom:20px;
+  }
+  .hero h1{
+    font-size:clamp(24px,5vw,34px);
+    line-height:1.42;
+    margin:0 0 16px;
+    font-weight:800;
+    letter-spacing:-0.4px;
+  }
+  .hero h1 em{color:var(--yellow);font-style:normal;}
+  .hero p{
+    font-size:15.5px;
+    color:#d9e6f2;
+    max-width:520px;
+    margin:0 auto 30px;
+  }
+  .cta-btn{
+    display:inline-block;
+    background:var(--yellow);
+    color:var(--navy-dark);
+    font-weight:800;
+    font-size:16px;
+    padding:16px 34px;
+    border-radius:12px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 10px 24px rgba(0,0,0,0.18);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,0.22);}
+  .hero .meta{
+    margin-top:16px;
+    font-size:12.5px;
+    color:#a9c2d8;
+  }
+
+  /* ---------- Trust strip ---------- */
+  .trust{
+    background:#fff;
+    margin-top:-34px;
+    position:relative;
+    border-radius:16px;
+    max-width:720px;
+    margin-left:auto;margin-right:auto;
+    box-shadow:0 12px 30px rgba(0,40,77,0.10);
+    padding:22px 10px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+  }
+  .trust .item{text-align:center;padding:8px 6px;}
+  .trust .item .ico{font-size:22px;margin-bottom:6px;}
+  .trust .item .t{font-size:13.5px;font-weight:700;color:var(--navy);}
+  .trust .item .d{font-size:11.5px;color:var(--sub);margin-top:3px;}
+
+  /* ---------- Section generic ---------- */
+  section{padding:56px 0 8px;}
+  .section-head{text-align:center;margin-bottom:32px;}
+  .eyebrow{
+    color:var(--navy);
+    font-weight:800;font-size:13px;
+    background:var(--yellow-soft);
+    display:inline-block;padding:5px 12px;border-radius:999px;
+    margin-bottom:12px;
+  }
+  .section-head h2{
+    font-size:clamp(20px,4vw,25px);
+    margin:0 0 10px;
+    color:var(--ink);
+    font-weight:800;
+    letter-spacing:-0.3px;
+  }
+  .section-head p{color:var(--sub);font-size:14.5px;margin:0 auto;max-width:480px;}
+
+  /* ---------- Process ---------- */
+  .steps{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+    margin-bottom:40px;
+  }
+  .step{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:22px 16px;text-align:center;position:relative;
+  }
+  .step .num{
+    width:30px;height:30px;border-radius:50%;
+    background:var(--navy);color:#fff;font-weight:800;font-size:14px;
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 12px;
+  }
+  .step h3{font-size:14.5px;margin:0 0 6px;color:var(--ink);font-weight:800;}
+  .step p{font-size:12.5px;color:var(--sub);margin:0;line-height:1.55;}
+  .step-arrow{display:none;}
+
+  /* ---------- Divider note ---------- */
+  .note-card{
+    background:#fff;border:1px solid var(--line);
+    border-left:4px solid var(--yellow);
+    border-radius:12px;padding:18px 20px;margin-bottom:40px;
+    font-size:13.5px;color:var(--sub);
+  }
+  .note-card b{color:var(--ink);}
+
+  /* ---------- Form ---------- */
+  .form-card{
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 16px 40px rgba(0,40,77,0.10);
+    overflow:hidden;
+    margin-bottom:60px;
+  }
+  .form-card .form-head{
+    background:var(--navy);
+    color:#fff;
+    padding:28px 26px;
+  }
+  .form-card .form-head h2{
+    margin:0 0 8px;font-size:19px;font-weight:800;
+  }
+  .form-card .form-head p{
+    margin:0;font-size:13px;color:#cfe0f2;line-height:1.6;
+  }
+  .form-body{padding:30px 22px 34px;}
+
+  .fgroup{
+    margin-bottom:30px;
+    padding-bottom:26px;
+    border-bottom:1px solid var(--line);
+  }
+  .fgroup:last-of-type{border-bottom:none;}
+
+  .qlabel{
+    display:block;
+    font-size:15px;font-weight:700;color:var(--ink);
+    margin-bottom:4px;
+  }
+  .qlabel .req{color:var(--danger);margin-left:2px;}
+  .qhint{font-size:12px;color:var(--sub);margin:0 0 12px;}
+
+  input[type="text"], textarea{
+    width:100%;
+    font-family:inherit;
+    font-size:14.5px;
+    padding:12px 14px;
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    background:#fbfcfe;
+    color:var(--ink);
+    outline:none;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  textarea{resize:vertical;min-height:70px;}
+  input[type="text"]:focus, textarea:focus{
+    border-color:var(--navy);
+    background:#fff;
+  }
+
+  .opt{
+    display:flex;align-items:flex-start;gap:10px;
+    padding:12px 14px;
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    margin-bottom:8px;
+    cursor:pointer;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .opt:hover{border-color:#b9cee3;}
+  .opt input{margin-top:2px;flex-shrink:0;accent-color:var(--navy);width:17px;height:17px;}
+  .opt span{font-size:13.8px;color:var(--ink);line-height:1.5;}
+  .opt.checked{border-color:var(--navy);background:#eef5fc;}
+  .opt.recommend span::after{
+    content:" ⭐추천";color:#c98a00;font-weight:700;font-size:12px;
+  }
+
+  .other-input{
+    margin-left:27px;margin-top:-2px;margin-bottom:10px;
+    display:none;
+  }
+  .other-input.show{display:block;}
+
+  .limit-note{font-size:11.5px;color:var(--sub);margin:-4px 0 10px;}
+
+  .err-msg{
+    display:none;
+    color:var(--danger);
+    font-size:12.5px;
+    margin-top:6px;
+    font-weight:600;
+  }
+  .fgroup.invalid .err-msg{display:block;}
+  .fgroup.invalid input[type="text"], .fgroup.invalid textarea{border-color:var(--danger);}
+  .fgroup.invalid .opt{border-color:#f3c6c6;}
+
+  .consent{
+    background:var(--bg);
+    border-radius:12px;
+    padding:16px 16px;
+    display:flex;gap:10px;align-items:flex-start;
+    margin-bottom:22px;
+  }
+  .consent input{margin-top:3px;accent-color:var(--navy);width:17px;height:17px;flex-shrink:0;}
+  .consent span{font-size:12.5px;color:var(--sub);line-height:1.55;}
+  .consent .req{color:var(--danger);}
+  .consent.invalid-consent{outline:1.5px solid var(--danger);}
+
+  .submit-btn{
+    width:100%;
+    background:var(--navy);
+    color:#fff;
+    font-size:16px;font-weight:800;
+    padding:17px;border:none;border-radius:12px;
+    cursor:pointer;
+    transition:background .15s ease, opacity .15s ease;
+  }
+  .submit-btn:hover{background:var(--navy-dark);}
+  .submit-btn:disabled{opacity:.55;cursor:not-allowed;}
+
+  .form-status{
+    text-align:center;font-size:12.5px;color:var(--sub);margin-top:12px;min-height:16px;
+  }
+  .form-status.error{color:var(--danger);font-weight:600;}
+
+  /* ---------- Success ---------- */
+  .success-card{
+    display:none;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 16px 40px rgba(0,40,77,0.10);
+    padding:50px 26px;
+    text-align:center;
+    margin-bottom:60px;
+  }
+  .success-card.show{display:block;}
+  .success-card .ico{
+    width:64px;height:64px;border-radius:50%;
+    background:var(--yellow-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-size:30px;margin:0 auto 18px;
+  }
+  .success-card h2{font-size:20px;color:var(--navy);margin:0 0 10px;font-weight:800;}
+  .success-card p{font-size:14px;color:var(--sub);max-width:400px;margin:0 auto 22px;}
+  .contact-alt{
+    display:inline-flex;flex-direction:column;gap:8px;
+    background:var(--bg);border-radius:12px;padding:16px 22px;
+    font-size:13px;color:var(--ink);
+  }
+  .contact-alt b{color:var(--navy);}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--navy-dark);
+    color:#b9cbdc;
+    padding:30px 0;
+    text-align:center;
+    font-size:12px;
+  }
+  footer .fbrand{color:#fff;font-weight:800;font-size:14px;margin-bottom:8px;}
+  footer a{text-decoration:underline;text-underline-offset:2px;}
+  footer .fline{margin-top:6px;opacity:.85;}
+
+  @media (max-width:560px){
+    .trust{grid-template-columns:1fr 1fr 1fr;padding:18px 6px;}
+    .trust .item .t{font-size:12px;}
+    .trust .item .d{display:none;}
+    .steps{grid-template-columns:1fr;}
+    .form-body{padding:24px 16px 28px;}
+    .form-card .form-head{padding:24px 18px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="dot"></span>고래영어학원</a>
+    <div class="loc">진주 초전동</div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="badge">📝 사전 진단지 · 소요시간 약 2분</span>
+    <h1>우리 아이에게 꼭 맞는<br><em>학습 로드맵</em>, 상담 전에 미리 찾아드립니다</h1>
+    <p>간단한 사전 진단지를 작성해 주시면, 방문 상담 당일 훨씬 더 정밀하고<br class="brk"> 깊이 있는 1:1 레벨 진단과 학습 상담이 가능해집니다.</p>
+    <div class="meta">고래영어학원 진주 초전동 · 입학 전 사전 진단 서비스</div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="trust">
+    <div class="item">
+      <div class="ico">🤖</div>
+      <div class="t">미래형AI수업</div>
+      <div class="d">웨일튜터 AI 대화 프로그램</div>
+    </div>
+    <div class="item">
+      <div class="ico">👥</div>
+      <div class="t">소그룹 집중 코칭</div>
+      <div class="d">아이 성향까지 살피는 밀착 관리</div>
+    </div>
+    <div class="item">
+      <div class="ico">📚</div>
+      <div class="t">원서 읽기 커리큘럼</div>
+      <div class="d">라이브러리 3000 · ERLT</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="section-head">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>상담은 이렇게 진행됩니다</h2>
+      <p>사전 진단지 하나로, 상담 시간을 아이를 위한 이야기에 더 집중할 수 있어요.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>사전 진단지 작성</h3>
+        <p>학습 이력과 아이 성향을 미리 남겨주세요. (약 2분)</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>원내 방문 상담</h3>
+        <p>필요 시 레벨 진단 · 성향 테스트를 함께 진행합니다.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>맞춤 로드맵 안내</h3>
+        <p>진단 결과를 바탕으로 우리 아이만의 학습 방향을 제안드려요.</p>
+      </div>
+    </div>
+
+    <div class="note-card">
+      <b>왜 미리 작성해야 할까요?</b> 상담 당일 짧은 시간 안에 아이의 학습 이력을 모두 설명하기는 쉽지 않습니다. 미리 남겨주신 내용을 바탕으로 원장님이 먼저 파악하고 상담을 준비하기 때문에, 훨씬 정밀한 진단과 알찬 상담이 가능합니다.
+    </div>
+  </section>
+</div>
+
+<div class="wrap" id="consult-form">
+
+  <form id="diagForm" class="form-card" novalidate>
+    <div class="form-head">
+      <h2>1:1 심층 입학·레벨 상담 사전 진단지</h2>
+      <p>안녕하세요, 고래영어학원입니다. 우리 아이의 언어 발달과 학습 성향을 다각도로 분석해 가장 최적화된 학습 로드맵을 안내해 드리기 위한 사전 설문입니다. 솔직하게 답변해 주시면 상담 당일 더 정밀한 진단이 가능합니다. (소요시간 약 2분)</p>
+    </div>
+
+    <div class="form-body">
+
+      <!-- Q1 -->
+      <div class="fgroup" data-required="true" data-type="text">
+        <label class="qlabel" for="q1">학생 이름 및 학교/학년<span class="req">*</span></label>
+        <input type="text" id="q1" name="entry.163607355" placeholder="예) 김고래 / 초전초 3학년">
+        <div class="err-msg">이 항목을 입력해 주세요.</div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="fgroup" data-required="true" data-type="text">
+        <label class="qlabel" for="q2">보호자 연락처 및 관계<span class="req">*</span></label>
+        <input type="text" id="q2" name="entry.1708694723" placeholder="예) 010-0000-0000 / 엄마">
+        <div class="err-msg">이 항목을 입력해 주세요.</div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="fgroup" data-required="true" data-type="radio">
+        <label class="qlabel">상담 당일 학생 동반 여부<span class="req">*</span></label>
+        <label class="opt recommend"><input type="radio" name="entry.1916893516" value="학생 동반 방문 (원내 레벨 진단 및 성향 테스트 진행)-추천"><span>학생 동반 방문 (원내 레벨 진단 및 성향 테스트 진행)</span></label>
+        <label class="opt"><input type="radio" name="entry.1916893516" value="학부모님 단독 방문 (상담만 진행)"><span>학부모님 단독 방문 (상담만 진행)</span></label>
+        <div class="err-msg">하나를 선택해 주세요.</div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="fgroup" data-required="true" data-type="checkbox" data-name="entry.1441802776">
+        <label class="qlabel">주요 영어 학습 경험<span class="req">*</span></label>
+        <p class="qhint">중복 선택 가능</p>
+        <label class="opt"><input type="checkbox" value="공교육(학교 수업) 외 사교육 경험 없음"><span>공교육(학교 수업) 외 사교육 경험 없음</span></label>
+        <label class="opt"><input type="checkbox" value="영어유치원 (수강 기간: __년) 각 항목 수강기간 작성은 기타에 작성해주세요"><span>영어유치원 (수강 기간 등은 아래 기타에 작성해 주세요)</span></label>
+        <label class="opt"><input type="checkbox" value="대형 어학원 / 정통 영어학원 (기관명 및 수강 기간 작성)"><span>대형 어학원 / 정통 영어학원 (기관명·수강 기간은 기타에 작성)</span></label>
+        <label class="opt"><input type="checkbox" value="동네 교습소 / 공부방"><span>동네 교습소 / 공부방</span></label>
+        <label class="opt"><input type="checkbox" value="학습지 / 화상영어 / 스마트 학습 (구몬, 눈높이, 웅진 등)"><span>학습지 / 화상영어 / 스마트 학습 (구몬, 눈높이, 웅진 등)</span></label>
+        <label class="opt"><input type="checkbox" value="엄마표 영어 / 자기주도 학습 (원서 읽기, 영상 시청 등)"><span>엄마표 영어 / 자기주도 학습 (원서 읽기, 영상 시청 등)</span></label>
+        <label class="opt"><input type="checkbox" class="other-toggle" value="__other_option__"><span>기타</span></label>
+        <div class="other-input" data-for="entry.1441802776"><input type="text" placeholder="기타 내용을 입력해 주세요 (예: 수강 기간 등)"></div>
+        <div class="err-msg">하나 이상 선택해 주세요.</div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="fgroup" data-required="true" data-type="radio">
+        <label class="qlabel">현재 파닉스(Phonics) 및 음가 습득 수준<span class="req">*</span></label>
+        <label class="opt"><input type="radio" name="entry.1154765193" value="알파벳 음가 및 기본 단어 인지 단계"><span>알파벳 음가 및 기본 단어 인지 단계</span></label>
+        <label class="opt"><input type="radio" name="entry.1154765193" value="단모음/장모음 규칙으로 단어 읽기 가능"><span>단모음/장모음 규칙으로 단어 읽기 가능</span></label>
+        <label class="opt"><input type="radio" name="entry.1154765193" value="이중자음/이중모음 학습 완성 (생소한 단어도 음가 조합하여 읽음)"><span>이중자음/이중모음 학습 완성 (생소한 단어도 음가 조합하여 읽음)</span></label>
+        <label class="opt"><input type="radio" name="entry.1154765193" value="파닉스 과정 완전 완료 및 문장/원서 읽기 단계"><span>파닉스 과정 완전 완료 및 문장/원서 읽기 단계</span></label>
+        <div class="err-msg">하나를 선택해 주세요.</div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="fgroup" data-type="text">
+        <label class="qlabel" for="q6">최근 마친 교재 또는 읽고 있는 원서 레벨</label>
+        <p class="qhint">선택 항목입니다</p>
+        <input type="text" id="q6" name="entry.41088531" placeholder="예) ORT 5단계, AR 2점대 등">
+      </div>
+
+      <!-- Q7 -->
+      <div class="fgroup" data-required="true" data-type="checkbox" data-name="entry.973775504">
+        <label class="qlabel">보호자님이 보시는 가장 부족한/개선이 필요한 항목<span class="req">*</span></label>
+        <label class="opt"><input type="checkbox" value="Listening &amp; Speaking (듣기/말하기)"><span>Listening &amp; Speaking (듣기/말하기)</span></label>
+        <label class="opt"><input type="checkbox" value="Reading &amp; Vocabulary (독해/어휘)"><span>Reading &amp; Vocabulary (독해/어휘)</span></label>
+        <label class="opt"><input type="checkbox" value="Grammar &amp; Writing (문법/서술형)"><span>Grammar &amp; Writing (문법/서술형)</span></label>
+        <label class="opt"><input type="checkbox" value="전반적인 영어 기초 단단히 다지기"><span>전반적인 영어 기초 단단히 다지기</span></label>
+        <div class="err-msg">하나 이상 선택해 주세요.</div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="fgroup" data-required="true" data-type="radio">
+        <label class="qlabel">영어에 대한 아동의 태도 및 정서<span class="req">*</span></label>
+        <label class="opt"><input type="radio" name="entry.1100313225" value="자신감이 넘치고 영어로 표현하는 것을 즐김"><span>자신감이 넘치고 영어로 표현하는 것을 즐김</span></label>
+        <label class="opt"><input type="radio" name="entry.1100313225" value="무난하게 따라오며 거부감은 없음"><span>무난하게 따라오며 거부감은 없음</span></label>
+        <label class="opt"><input type="radio" name="entry.1100313225" value="틀리는 것에 대한 두려움이 있거나 다소 부담스러워함"><span>틀리는 것에 대한 두려움이 있거나 다소 부담스러워함</span></label>
+        <label class="opt"><input type="radio" name="entry.1100313225" value="영어 공부에 대한 거부감/스트레스가 다소 높은 편임"><span>영어 공부에 대한 거부감/스트레스가 다소 높은 편임</span></label>
+        <div class="err-msg">하나를 선택해 주세요.</div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="fgroup" data-type="radio">
+        <label class="qlabel">아이의 대표적인 학습 성향</label>
+        <p class="qhint">선택 항목입니다</p>
+        <label class="opt"><input type="radio" name="entry.32749638" value='논리·규칙형: "왜?"라는 질문이 많고, 규칙이나 문법 원리를 정확히 알아야 마음이 놓이는 아이'><span>논리·규칙형 — "왜?"라는 질문이 많고, 규칙과 원리를 알아야 마음이 놓이는 아이</span></label>
+        <label class="opt"><input type="radio" name="entry.32749638" value="분석·완벽주의형: 틀리는 것을 싫어하고, 단어나 문장의 구조를 꼼꼼하게 따져보며 공부하는 아이"><span>분석·완벽주의형 — 틀리는 것을 싫어하고, 구조를 꼼꼼하게 따져보는 아이</span></label>
+        <label class="opt"><input type="radio" name="entry.32749638" value="시각·텍스트형: 소리만 듣는 것보다 눈으로 글자나 그림, 교재를 직접 봐야 이해가 잘 되는 아이"><span>시각·텍스트형 — 눈으로 글자나 그림을 직접 봐야 이해가 잘 되는 아이</span></label>
+        <label class="opt"><input type="radio" name="entry.32749638" value="직관·체험형: 소리, 영상, 반복적인 노출을 통해 자연스럽게 습득하고 표현하는 것을 좋아하는 아이"><span>직관·체험형 — 소리와 영상, 반복 노출로 자연스럽게 습득하는 아이</span></label>
+        <div class="err-msg">하나를 선택해 주세요.</div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="fgroup" data-required="true" data-type="checkbox" data-name="entry.1364025207" data-max="2">
+        <label class="qlabel">이번 수강을 통해 가장 기대하는 핵심 목표<span class="req">*</span></label>
+        <p class="limit-note">최대 2개까지 선택할 수 있어요</p>
+        <label class="opt"><input type="checkbox" value="파닉스 및 기초 음가 완성"><span>파닉스 및 기초 음가 완성</span></label>
+        <label class="opt"><input type="checkbox" value="유창한 원서 읽기(Extensive Reading) 및 독해력 확장"><span>유창한 원서 읽기(Extensive Reading) 및 독해력 확장</span></label>
+        <label class="opt"><input type="checkbox" value="스피킹 자신감 및 자연스러운 표현력 향상"><span>스피킹 자신감 및 자연스러운 표현력 향상</span></label>
+        <label class="opt"><input type="checkbox" value="정확한 문법(Grammar) 정리 및 구문 분석 능력"><span>정확한 문법(Grammar) 정리 및 구문 분석 능력</span></label>
+        <label class="opt"><input type="checkbox" value="학교 내신 및 서술형/지문 평가 완벽 대비"><span>학교 내신 및 서술형/지문 평가 완벽 대비</span></label>
+        <div class="err-msg">1~2개를 선택해 주세요.</div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="fgroup" data-type="text">
+        <label class="qlabel" for="q11">학원 측에 미리 알려주실 특이사항이나 당부 말씀</label>
+        <p class="qhint">선택 항목입니다</p>
+        <textarea id="q11" name="entry.450126480" placeholder="자유롭게 남겨 주세요"></textarea>
+      </div>
+
+      <div class="consent">
+        <input type="checkbox" id="agree">
+        <label for="agree"><span>기재해 주신 정보는 <b>입학·레벨 상담 목적</b>으로만 활용되며, 상담 진행을 위해 안전하게 관리됩니다. 위 내용에 동의합니다. <span class="req">*</span></span></label>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">상담 신청 완료하기</button>
+      <div class="form-status" id="formStatus"></div>
+    </div>
+  </form>
+
+  <div class="success-card" id="successCard">
+    <div class="ico">🐳</div>
+    <h2>상담 신청이 완료되었습니다</h2>
+    <p>소중한 이야기를 남겨주셔서 감사합니다. 남겨주신 내용을 바탕으로 상담을 준비한 뒤, 기재해 주신 연락처로 안내드리겠습니다.</p>
+    <div class="contact-alt">
+      <span><b>급하게 문의가 필요하시다면</b></span>
+      <span>전화 <a href="tel:010-3803-8335"><b>010-3803-8335</b></a> 로 바로 연락 주셔도 됩니다.</span>
+      <span>카카오톡 채널 <b>'고래영어학원'</b>을 검색해 편하게 메시지 주세요.</span>
+      <span>englishwhale.com 에서도 학원 소식을 확인하실 수 있어요.</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">고래영어학원</div>
+    <div>경상남도 진주시 초전동 1639-2번지 1층</div>
+    <div class="fline">📞 <a href="tel:010-3803-8335">010-3803-8335</a></div>
+    <div class="fline"><a href="https://englishwhale.com" target="_blank" rel="noopener">englishwhale.com</a> · 카카오톡 채널 '고래영어학원'</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('diagForm');
+  var successCard = document.getElementById('successCard');
+  var submitBtn = document.getElementById('submitBtn');
+  var statusEl = document.getElementById('formStatus');
+  var ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScWUWVr0QeH1FQI9qfrlCJjx7tBjuRB_NslSP6-mQdQYC1geg/formResponse';
+
+  // checked-state styling
+  form.querySelectorAll('.opt input').forEach(function(inp){
+    inp.addEventListener('change', function(){
+      var opt = inp.closest('.opt');
+      var group = inp.closest('.fgroup');
+      if(inp.type === 'radio'){
+        group.querySelectorAll('.opt').forEach(function(o){ o.classList.remove('checked'); });
+        opt.classList.add('checked');
+      } else {
+        opt.classList.toggle('checked', inp.checked);
+      }
+      group.classList.remove('invalid');
+    });
+  });
+
+  // "기타" toggle for Q4
+  var otherToggle = form.querySelector('.other-toggle');
+  var otherInput = form.querySelector('.other-input');
+  otherToggle.addEventListener('change', function(){
+    otherInput.classList.toggle('show', otherToggle.checked);
+    if(!otherToggle.checked){ otherInput.querySelector('input').value=''; }
+  });
+
+  // Q10 max 2 enforcement
+  var maxGroup = form.querySelector('.fgroup[data-max="2"]');
+  var maxBoxes = maxGroup.querySelectorAll('input[type="checkbox"]');
+  maxBoxes.forEach(function(cb){
+    cb.addEventListener('change', function(){
+      var checkedCount = Array.prototype.filter.call(maxBoxes, function(c){return c.checked;}).length;
+      maxBoxes.forEach(function(c){
+        if(!c.checked){ c.disabled = checkedCount >= 2; c.closest('.opt').style.opacity = c.disabled ? .45 : 1; }
+      });
+    });
+  });
+
+  // text inputs clear invalid on input
+  form.querySelectorAll('input[type="text"], textarea').forEach(function(el){
+    el.addEventListener('input', function(){ el.closest('.fgroup').classList.remove('invalid'); });
+  });
+  document.getElementById('agree').addEventListener('change', function(){
+    document.querySelector('.consent').classList.remove('invalid-consent');
+  });
+
+  function validate(){
+    var ok = true;
+    form.querySelectorAll('.fgroup[data-required="true"]').forEach(function(group){
+      var type = group.getAttribute('data-type');
+      var valid = true;
+      if(type === 'text'){
+        var input = group.querySelector('input[type="text"], textarea');
+        valid = input.value.trim().length > 0;
+      } else if(type === 'radio'){
+        valid = !!group.querySelector('input[type="radio"]:checked');
+      } else if(type === 'checkbox'){
+        var boxes = group.querySelectorAll('input[type="checkbox"]:checked');
+        if(group.hasAttribute('data-max')){
+          valid = boxes.length >= 1 && boxes.length <= parseInt(group.getAttribute('data-max'),10);
+        } else {
+          valid = boxes.length >= 1;
+        }
+      }
+      group.classList.toggle('invalid', !valid);
+      if(!valid) ok = false;
+    });
+    var agree = document.getElementById('agree');
+    if(!agree.checked){
+      document.querySelector('.consent').classList.add('invalid-consent');
+      ok = false;
+    }
+    return ok;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    statusEl.textContent = '';
+    statusEl.classList.remove('error');
+
+    if(!validate()){
+      statusEl.textContent = '필수 항목을 다시 확인해 주세요. (동의 체크박스 포함)';
+      statusEl.classList.add('error');
+      var firstInvalid = form.querySelector('.fgroup.invalid');
+      if(firstInvalid){ firstInvalid.scrollIntoView({behavior:'smooth', block:'center'}); }
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '전송 중...';
+
+    var fd = new FormData();
+    fd.append('entry.163607355', document.getElementById('q1').value.trim());
+    fd.append('entry.1708694723', document.getElementById('q2').value.trim());
+
+    var q3 = form.querySelector('input[name="entry.1916893516"]:checked');
+    if(q3) fd.append('entry.1916893516', q3.value);
+
+    form.querySelectorAll('.fgroup[data-name="entry.1441802776"] input[type="checkbox"]:checked').forEach(function(cb){
+      fd.append('entry.1441802776', cb.value);
+    });
+    if(otherToggle.checked){
+      var otherVal = otherInput.querySelector('input').value.trim();
+      fd.append('entry.1441802776.other_option_response', otherVal);
+    }
+
+    var q5 = form.querySelector('input[name="entry.1154765193"]:checked');
+    if(q5) fd.append('entry.1154765193', q5.value);
+
+    fd.append('entry.41088531', document.getElementById('q6').value.trim());
+
+    form.querySelectorAll('.fgroup[data-name="entry.973775504"] input[type="checkbox"]:checked').forEach(function(cb){
+      fd.append('entry.973775504', cb.value);
+    });
+
+    var q8 = form.querySelector('input[name="entry.1100313225"]:checked');
+    if(q8) fd.append('entry.1100313225', q8.value);
+
+    var q9 = form.querySelector('input[name="entry.32749638"]:checked');
+    if(q9) fd.append('entry.32749638', q9.value);
+
+    form.querySelectorAll('.fgroup[data-name="entry.1364025207"] input[type="checkbox"]:checked').forEach(function(cb){
+      fd.append('entry.1364025207', cb.value);
+    });
+
+    fd.append('entry.450126480', document.getElementById('q11').value.trim());
+
+    fetch(ACTION_URL, { method:'POST', mode:'no-cors', body: fd })
+      .then(function(){ showSuccess(); })
+      .catch(function(){ showFallback(); });
+
+    // Safety net: some browsers resolve opaque no-cors responses slowly.
+    setTimeout(function(){
+      if(!successCard.classList.contains('show')){ showSuccess(); }
+    }, 2500);
+  });
+
+  function showSuccess(){
+    form.style.display = 'none';
+    successCard.classList.add('show');
+    successCard.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  function showFallback(){
+    submitBtn.disabled = false;
+    submitBtn.textContent = '상담 신청 완료하기';
+    statusEl.textContent = '전송 중 문제가 발생했어요. 카카오톡 채널 "고래영어학원"으로 문의해 주시면 빠르게 도와드릴게요.';
+    statusEl.classList.add('error');
+  }
+})();
+</script>
+
+</body>
+</html>
