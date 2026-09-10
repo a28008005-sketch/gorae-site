@@ -52,4 +52,4 @@ tools/blog/       노션 연동 프로그램
 ## 연락처
 
 고래영어 초전캠퍼스 · 경남 진주시 초전동 1639-2 · 010-3803-8335
-상담 신청: https://forms.gle/qz8bCWyDeZGTb6p59
+상담 신청: https://whalejinju.kr/consult
