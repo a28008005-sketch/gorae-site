@@ -296,22 +296,15 @@ footer a{color:var(--muted)}
         <div class="error-msg">개인정보 수집·이용에 동의해 주세요.</div>
       </div>
 
-      <button type="submit" class="submit">상담 예약 신청하기</button>
+      <button type="submit" class="submit">문자로 상담 예약하기</button>
       <p class="note-small">골라 주신 날짜 중 하나로 확정해<br>문자로 안내해 드립니다.</p>
     </form>
 
     <div id="done" aria-live="polite">
-      <h2>거의 다 됐습니다!</h2>
-      <p class="lead">아래 버튼을 눌러 문자를 보내 주시면 예약 신청이 접수됩니다.</p>
-      <div class="warn">문자 앱이 열리면 <b>전송 버튼까지 꼭 눌러 주세요.</b> 골라 주신 날짜 중 가능한 날로 확정 문자를 드리겠습니다.</div>
-      <div class="summary" id="summary"></div>
-      <div class="btns">
-        <a class="btn primary" id="smsBtn" href="#">문자로 예약 보내기</a>
-        <button type="button" class="btn ghost" id="copyBtn">내용 복사하기 (PC에서 신청할 때)</button>
-        <div id="copied">복사했습니다. 010-3803-8335로 문자나 카카오톡으로 보내 주세요.</div>
-        <a class="btn ghost" href="tel:01038038335">전화로 바로 예약하기</a>
-        <button type="button" class="btn link" id="editBtn">입력 내용 수정하기</button>
-      </div>
+      <h2>문자 전송만 눌러 주세요</h2>
+      <p class="lead">예약 내용이 담긴 문자 창이 열렸습니다.<br>전송을 누르시면 접수가 완료됩니다.</p>
+      <a class="btn primary" id="smsBtn" href="#">문자 창 다시 열기</a>
+      <p class="note-small">PC에서는 010-3803-8335로 연락 주세요.</p>
     </div>
   </section>
 </div>
@@ -412,21 +405,13 @@ footer a{color:var(--muted)}
       '남기실 말씀: ' + (val('memo') || '-')
     ];
     var text = lines.join('\n');
-    document.getElementById('summary').textContent = text;
     var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    document.getElementById('smsBtn').href = 'sms:' + PHONE + (isIOS ? '&' : '?') + 'body=' + encodeURIComponent(text);
-    document.getElementById('copyBtn').onclick = function(){
-      var show = function(){ document.getElementById('copied').style.display = 'block'; };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(show, show);
-      } else {
-        var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta);
-        ta.select(); try { document.execCommand('copy'); } catch(err) {} document.body.removeChild(ta); show();
-      }
-    };
+    var smsHref = 'sms:' + PHONE + (isIOS ? '&' : '?') + 'body=' + encodeURIComponent(text);
+    document.getElementById('smsBtn').href = smsHref;
     form.style.display = 'none';
     done.style.display = 'block';
     done.scrollIntoView({behavior:'smooth', block:'start'});
+    window.location.href = smsHref;
   });
 
   // 입력하는 즉시 오류 표시를 지워, 다음 항목을 누를 때 화면이 밀리지 않게 함
@@ -437,12 +422,6 @@ footer a{color:var(--muted)}
   form.addEventListener('input', clearError);
   form.addEventListener('change', clearError);
 
-  document.getElementById('editBtn').addEventListener('click', function(){
-    done.style.display = 'none';
-    form.style.display = 'block';
-    document.getElementById('copied').style.display = 'none';
-    form.scrollIntoView({behavior:'smooth', block:'start'});
-  });
 })();
 </script>
 </body>
